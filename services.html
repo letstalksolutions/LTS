@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services – LT.Solutions</title>
+  <meta name="description" content="Discovery & diagnosis, strategic roadmapping, hands-on implementation, and knowledge transfer. Expert support across every phase of your transformation journey.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 
+    PURPOSE: Services page — detailed breakdown of three core offerings
+    LANDMARKS: header, nav, main (with three service sections), footer
+    ACCESSIBILITY: Skip link, semantic headings, article elements for each service
+  -->
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__logo">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-full.svg" alt="LT.Solutions logo">
+ <span class="logo__text">LT.Solutions</span>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="site-nav-list" aria-label="Toggle mobile menu">
+          <span class="mobile-menu-toggle__icon"></span>
+        </button>
+        <ul class="site-nav__list" id="site-nav-list">
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="about.html" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="services.html" class="site-nav__link site-nav__link--active">Services</a></li>
+          <li class="site-nav__item"><a href="approach.html" class="site-nav__link">Our Approach</a></li>
+          <li class="site-nav__item"><a href="case-studies.html" class="site-nav__link">Case Studies</a></li>
+          <li class="site-nav__item"><a href="contact.html" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- PAGE INTRO -->
+    <section class="services-intro" id="services-intro">
+      <div class="services-intro__container">
+        <h1 class="services-intro__heading">Services Designed to Scale</h1>
+        <p class="services-intro__text">
+          Whether you're starting fresh or optimising an existing Atlassian environment, I provide tailored consulting to help your team work smarter, not harder.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICE 1: Platform Consultation -->
+    <section class="service-detail" id="platform-consultation">
+      <div class="service-detail__container">
+        <article class="service-detail__article">
+          <h2 class="service-detail__heading">Platform Consultation</h2>
+          <p class="service-detail__description">
+            Expert guidance on Atlassian product selection, implementation, configuration, and optimisation for your specific business needs.
+          </p>
+          <h3 class="service-detail__subheading">What's Included</h3>
+          <ul class="service-detail__list">
+            <li>Product selection aligned with your goals and budget</li>
+            <li>Implementation planning and execution</li>
+            <li>Custom configuration tailored to your workflows</li>
+            <li>Performance tuning and ongoing optimisation</li>
+          </ul>
+          <h3 class="service-detail__subheading">Who It's For</h3>
+          <p class="service-detail__text">
+            Teams evaluating Atlassian tools for the first time, or organisations looking to consolidate scattered systems into a unified platform.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICE 2: Workflow Optimisation -->
+    <section class="service-detail service-detail--alt" id="workflow-optimisation">
+      <div class="service-detail__container">
+        <article class="service-detail__article">
+          <h2 class="service-detail__heading">Workflow Optimisation</h2>
+          <p class="service-detail__description">
+            Streamline your team's processes with custom workflows, automation rules, and integrations that boost productivity and reduce manual overhead.
+          </p>
+          <h3 class="service-detail__subheading">What's Included</h3>
+          <ul class="service-detail__list">
+            <li>Workflow analysis and bottleneck identification</li>
+            <li>Custom workflow design for Jira and JSM</li>
+            <li>Automation rules to eliminate repetitive tasks</li>
+            <li>Ongoing refinement and continuous improvement support</li>
+          </ul>
+          <h3 class="service-detail__subheading">Who It's For</h3>
+          <p class="service-detail__text">
+            Teams struggling with inefficient processes, slow ticket resolution, or manual handoffs that slow down delivery.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICE 3: Systems Integration -->
+    <section class="service-detail" id="systems-integration">
+      <div class="service-detail__container">
+        <article class="service-detail__article">
+          <h2 class="service-detail__heading">Systems Integration</h2>
+          <p class="service-detail__description">
+            Connect your Atlassian tools with other business systems—CRM, DevOps, cloud platforms—for seamless data flow and enhanced collaboration.
+          </p>
+          <h3 class="service-detail__subheading">What's Included</h3>
+          <ul class="service-detail__list">
+            <li>Integration planning and architecture design</li>
+            <li>API development (REST, webhooks)</li>
+            <li>Azure DevOps, GCP, Google Workspace, and custom integrations</li>
+            <li>Testing, documentation, and handoff to your teams</li>
+          </ul>
+          <h3 class="service-detail__subheading">Who It's For</h3>
+          <p class="service-detail__text">
+            Organisations with fragmented toolsets, relying on manual data entry or struggling to maintain a single source of truth.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+      <div class="cta__container">
+        <h2 class="cta__heading">Let's Build Something Better</h2>
+        <p class="cta__text">
+          Ready to streamline your Atlassian environment? Get in touch to discuss your needs.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Contact Me</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__branding">
+        <span class="logo__text">LT.Solutions</span>
+        <p class="site-footer__tagline">Hands-on Atlassian expertise, designed to scale.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Home</a></li>
+          <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+          <li class="footer-nav__item"><a href="services.html" class="footer-nav__link">Services</a></li>
+          <li class="footer-nav__item"><a href="contact.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contact">
+        <p>Email: <a href="mailto:andreas@lt.solutions">andreas@lt.solutions</a></p>
+        <p>Location: London, UK</p>
+      </div>
+      <p class="site-footer__copyright">&copy; 2025 Let's Talk Solutions Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

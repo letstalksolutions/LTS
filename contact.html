@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact – LT.Solutions</title>
+  <meta name="description" content="Get in touch with LT.Solutions to discuss your transformation challenges and explore how our proven methodology can help you achieve your objectives.">
+
+  <!-- Favicon (single, not duplicated) -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 
+    PURPOSE: Contact page — provide contact information and form for enquiries
+    LANDMARKS: header, nav, main (with form), footer
+    ACCESSIBILITY: Skip link, form labels, fieldset/legend for grouping
+    NOTE: Form handler will be implemented in Phase 5 with Cloudflare Worker
+  -->
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__logo">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-full.svg" alt="LT.Solutions logo">
+   <span class="logo__text">LT.Solutions</span>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="site-nav-list" aria-label="Toggle mobile menu">
+          <span class="mobile-menu-toggle__icon"></span>
+        </button>
+        <ul class="site-nav__list" id="site-nav-list">
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="about.html" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="services.html" class="site-nav__link">Services</a></li>
+          <li class="site-nav__item"><a href="approach.html" class="site-nav__link">Our Approach</a></li>
+          <li class="site-nav__item"><a href="case-studies.html" class="site-nav__link">Case Studies</a></li>
+          <li class="site-nav__item"><a href="contact.html" class="site-nav__link site-nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- INTRO -->
+    <section class="contact-intro" id="contact-intro">
+      <div class="contact-intro__container">
+        <h1 class="contact-intro__heading">Let's Start a Conversation</h1>
+        <p class="contact-intro__text">
+          Whether you're evaluating Atlassian tools, optimising your current setup, or tackling a specific challenge, I'm here to help.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT OPTIONS -->
+    <section class="contact-options" id="contact-options">
+      <div class="contact-options__container">
+        <div class="contact-option">
+          <h2 class="contact-option__heading">Email</h2>
+          <p class="contact-option__text">
+            <a href="mailto:andreas@lt.solutions" class="contact-option__link">andreas@lt.solutions</a>
+          </p>
+        </div>
+        <div class="contact-option">
+          <h2 class="contact-option__heading">LinkedIn</h2>
+          <p class="contact-option__text">
+            <a href="https://www.linkedin.com/in/andreas-l-a-nyberg" class="contact-option__link" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+          </p>
+        </div>
+        <div class="contact-option">
+          <h2 class="contact-option__heading">Location</h2>
+          <p class="contact-option__text">London, UK</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section" id="contact-form-section">
+      <div class="contact-form-section__container">
+        <h2 class="contact-form-section__heading">Send a Message</h2>
+        
+        <!-- Phase 5: Form will POST to Cloudflare Worker endpoint -->
+        <form class="contact-form" id="contact-form" method="post" action="#" novalidate>
+          
+          <div class="form-group">
+            <label for="name" class="form-label">Name <span class="form-required">*</span></label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              class="form-input" 
+              required 
+              aria-required="true"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email <span class="form-required">*</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              required 
+              aria-required="true"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="company" class="form-label">Company (Optional)</label>
+            <input 
+              type="text" 
+              id="company" 
+              name="company" 
+              class="form-input"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message <span class="form-required">*</span></label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-textarea" 
+              rows="6" 
+              required 
+              aria-required="true"
+            ></textarea>
+          </div>
+
+          <!-- Honeypot field for spam prevention (Phase 5) -->
+          <div class="form-group form-group--hidden" aria-hidden="true">
+            <label for="hp_field">Leave this field blank</label>
+            <input 
+              type="text" 
+              id="hp_field" 
+              name="hp_field" 
+              class="form-input" 
+              tabindex="-1" 
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </div>
+
+          <!-- Phase 5: Success/error messages will be injected here -->
+          <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__branding">
+        <span class="logo__text">LT.Solutions</span>
+        <p class="site-footer__tagline">Hands-on Atlassian expertise, designed to scale.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Home</a></li>
+          <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+          <li class="footer-nav__item"><a href="services.html" class="footer-nav__link">Services</a></li>
+          <li class="footer-nav__item"><a href="contact.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contact">
+        <p>Email: <a href="mailto:andreas@lt.solutions">andreas@lt.solutions</a></p>
+        <p>Location: London, UK</p>
+      </div>
+      <p class="site-footer__copyright">&copy; 2025 Let's Talk Solutions Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Phase 5: Contact form JavaScript will be added here -->
+
+</body>
+</html>

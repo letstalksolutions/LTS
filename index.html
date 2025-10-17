@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let’s Talk Solutions – Atlassian Consultancy</title>
+  <meta name="description" content="Professional Atlassian consulting services. Jira, Confluence, Opsgenie, and ITSM automation experts.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JavaScript (defer loads after HTML) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <!-- 
+    PURPOSE: Homepage — introduce the consultancy, services overview, CTA to contact
+    LANDMARKS: header, nav, main, footer
+    ACCESSIBILITY: Skip link, semantic headings (h1 > h2 > h3), aria-label on nav
+  -->
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__logo">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-full.svg" alt="LT.Solutions logo">
+          <span class="logo__text">LT.Solutions</span>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="site-nav-list" aria-label="Toggle mobile menu">
+          <span class="mobile-menu-toggle__icon"></span>
+        </button>
+        <ul class="site-nav__list" id="site-nav-list">
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link site-nav__link--active">Home</a></li>
+          <li class="site-nav__item"><a href="about.html" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="services.html" class="site-nav__link">Services</a></li>
+          <li class="site-nav__item"><a href="approach.html" class="site-nav__link">Our Approach</a></li>
+          <li class="site-nav__item"><a href="case-studies.html" class="site-nav__link">Case Studies</a></li>
+          <li class="site-nav__item"><a href="contact.html" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+      <div class="hero__container">
+        <h1 class="hero__heading">Clear Solutions, Tailored for Your Team</h1>
+        <p class="hero__subheading">
+          Streamline workflows, enhance collaboration, and unlock your team's full potential with expert Atlassian consulting.
+        </p>
+        <div class="hero__cta">
+          <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+          <a href="services.html" class="btn btn--secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="services-preview" id="services-preview">
+      <div class="services-preview__container">
+        <h2 class="services-preview__heading">What I Offer</h2>
+        <div class="services-preview__grid">
+          
+          <article class="service-card">
+            <div class="service-card__icon">
+              <!-- Phase 2: Icon or graphic -->
+            </div>
+            <h3 class="service-card__title">Platform Consultation</h3>
+            <p class="service-card__description">
+              Expert guidance on Atlassian product selection, implementation, configuration, and optimisation for your business.
+            </p>
+            <a href="services.html#platform-consultation" class="service-card__link">Learn more</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <!-- Phase 2: Icon or graphic -->
+            </div>
+            <h3 class="service-card__title">Workflow Optimisation</h3>
+            <p class="service-card__description">
+              Streamline your team's processes with custom workflows, automation rules, and integrations that boost productivity.
+            </p>
+            <a href="services.html#workflow-optimisation" class="service-card__link">Learn more</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon">
+              <!-- Phase 2: Icon or graphic -->
+            </div>
+            <h3 class="service-card__title">Systems Integration</h3>
+            <p class="service-card__description">
+              Connect your Atlassian tools with other business systems for seamless data flow and enhanced collaboration.
+            </p>
+            <a href="services.html#systems-integration" class="service-card__link">Learn more</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="about-preview" id="about-preview">
+      <div class="about-preview__container">
+        <h2 class="about-preview__heading">Why Choose Me</h2>
+        <ul class="about-preview__list">
+          <li class="about-preview__item">15+ years in enterprise tech and Atlassian delivery</li>
+          <li class="about-preview__item">Deep Jira Service Management, Confluence & Opsgenie expertise</li>
+          <li class="about-preview__item">Proven rollouts with measurable productivity gains</li>
+          <li class="about-preview__item">Pragmatic, hands-on approach tailored to your teams</li>
+        </ul>
+        <a href="about.html" class="btn btn--secondary">More About Me</a>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta" id="cta">
+      <div class="cta__container">
+        <h2 class="cta__heading">Ready to Optimise Your Atlassian Ecosystem?</h2>
+        <p class="cta__text">
+          Let's work together to unlock the full potential of your tools and transform how your team collaborates.
+        </p>
+        <a href="contact.html" class="btn btn--primary">Start the Conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__branding">
+        <span class="logo__text">LT.Solutions</span>
+        <p class="site-footer__tagline">Hands-on Atlassian expertise, designed to scale.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Home</a></li>
+          <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+          <li class="footer-nav__item"><a href="services.html" class="footer-nav__link">Services</a></li>
+          <li class="footer-nav__item"><a href="contact.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contact">
+        <p>Email: <a href="mailto:andreas@lt.solutions">andreas@lt.solutions</a></p>
+        <p>Location: London, UK</p>
+      </div>
+      <p class="site-footer__copyright">&copy; 2025 Let's Talk Solutions Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

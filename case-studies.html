@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies – LT.Solutions</title>
+  <meta name="description" content="Selected engagements and outcomes demonstrating measurable impact across Atlassian implementations and ITSM transformations.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 
+    PURPOSE: Case Studies page — showcase real-world projects and outcomes
+    LANDMARKS: header, nav, main (with case study articles), footer
+    ACCESSIBILITY: Skip link, article elements for each case study
+  -->
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__container">
+      <div class="site-header__logo">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-full.svg" alt="LT.Solutions logo">
+  <span class="logo__text">LT.Solutions</span>
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="site-nav-list" aria-label="Toggle mobile menu">
+          <span class="mobile-menu-toggle__icon"></span>
+        </button>
+        <ul class="site-nav__list" id="site-nav-list">
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link">Home</a></li>
+          <li class="site-nav__item"><a href="about.html" class="site-nav__link">About</a></li>
+          <li class="site-nav__item"><a href="services.html" class="site-nav__link">Services</a></li>
+          <li class="site-nav__item"><a href="approach.html" class="site-nav__link">Our Approach</a></li>
+          <li class="site-nav__item"><a href="case-studies.html" class="site-nav__link site-nav__link--active">Case Studies</a></li>
+          <li class="site-nav__item"><a href="contact.html" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- INTRO -->
+    <section class="case-studies-intro" id="case-studies-intro">
+      <div class="case-studies-intro__container">
+        <h1 class="case-studies-intro__heading">Real Projects, Real Results</h1>
+        <p class="case-studies-intro__text">
+          Here's a selection of projects where I've delivered measurable outcomes for enterprise teams.
+</p>
+</div>
+</section>
+<!-- CASE STUDY 1 -->
+<section class="case-study" id="case-study-kantar">
+  <div class="case-study__container">
+    <article class="case-study__article">
+      <h2 class="case-study__heading">Kantar Media: ITSM Transition at Scale</h2>
+      <div class="case-study__meta">
+        <span class="case-study__tag">Platform Migration</span>
+        <span class="case-study__tag">CMDB Design</span>
+        <span class="case-study__tag">Integration</span>
+      </div>
+      <h3 class="case-study__subheading">The Challenge</h3>
+      <p class="case-study__text">
+        Kantar Media needed to migrate from ServiceNow to Jira Service Management for 4,500+ users across HR, IT, SOC, NOC, and service agent teams. The transition required a complete CMDB rebuild, integration with Azure DevOps, and minimal disruption to operations.
+      </p>
+      <h3 class="case-study__subheading">The Solution</h3>
+      <ul class="case-study__list">
+        <li>Designed Atlassian Assets (CMDB) structure covering location hierarchies, people, workstations, network gear, and server infrastructure</li>
+        <li>Built MVP for 500 initial users, ahead of schedule for full 2026 rollout</li>
+        <li>Integrated JSM with Azure DevOps to enable seamless handoffs between service requests and development workflows</li>
+        <li>Delivered knowledge transfer sessions enabling internal teams to independently configure automation rules and CMDB queries</li>
+      </ul>
+      <h3 class="case-study__subheading">Outcomes</h3>
+      <ul class="case-study__list">
+        <li>500 users onboarded ahead of schedule</li>
+        <li>Complete CMDB structure operational and integrated with automation</li>
+        <li>Internal teams trained and self-sufficient for ongoing configuration</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CASE STUDY 2 -->
+<section class="case-study case-study--alt" id="case-study-datasparq">
+  <div class="case-study__container">
+    <article class="case-study__article">
+      <h2 class="case-study__heading">Datasparq: ISO 27001 Documentation Hub</h2>
+      <div class="case-study__meta">
+        <span class="case-study__tag">Knowledge Management</span>
+        <span class="case-study__tag">Compliance</span>
+        <span class="case-study__tag">Automation</span>
+      </div>
+      <h3 class="case-study__subheading">The Challenge</h3>
+      <p class="case-study__text">
+        Datasparq needed to consolidate scattered ISO 27001 policies and process documentation into a single, auditor-friendly knowledge base. The company also required cost optimisation for GCP and Atlassian spend.
+      </p>
+      <h3 class="case-study__subheading">The Solution</h3>
+      <ul class="case-study__list">
+        <li>Designed and delivered proprietary ISO 27001 Confluence Documentation Hub, praised by auditors for clarity and structure</li>
+        <li>Migrated internal support from Zendesk to JSM, streamlining ticket workflows and aligning support with engineering teams</li>
+        <li>Built cost optimisation automations for GCP and Atlassian using webhooks and APIs, reducing SaaS overhead</li>
+        <li>Created Confluence knowledge bases for clients and staff, improving self-service adoption</li>
+      </ul>
+      <h3 class="case-study__subheading">Outcomes</h3>
+      <ul class="case-study__list">
+        <li>ISO 27001 audit completed with zero documentation gaps</li>
+        <li>Support ticket resolution time improved by 25%</li>
+        <li>Measurable reduction in SaaS costs through automation</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CASE STUDY 3 -->
+<section class="case-study" id="case-study-zephr">
+  <div class="case-study__container">
+    <article class="case-study__article">
+      <h2 class="case-study__heading">Zephr (Zuora): Global Support Operations</h2>
+      <div class="case-study__meta">
+        <span class="case-study__tag">Service Desk</span>
+        <span class="case-study__tag">Workflow Design</span>
+        <span class="case-study__tag">Team Scaling</span>
+      </div>
+      <h3 class="case-study__subheading">The Challenge</h3>
+      <p class="case-study__text">
+        Zephr needed to scale technical support for tier-1 clients (WHICH?, New York Post, News Corp Australia) across multiple time zones, while preventing customer-facing incidents through better escalation workflows.
+      </p>
+      <h3 class="case-study__subheading">The Solution</h3>
+      <ul class="case-study__list">
+        <li>Built and scaled B2B technical support teams in UK & New Zealand</li>
+        <li>Designed escalation workflows integrating Jira, PagerDuty, and Slack to prevent incidents</li>
+        <li>Led company-wide Jira administration, optimising workflows and ticket management</li>
+        <li>Established 24/5 global support model, improving customer coverage and satisfaction</li>
+      </ul>
+      <h3 class="case-study__subheading">Outcomes</h3>
+      <ul class="case-study__list">
+        <li>24/5 global support coverage operational within 6 months</li>
+        <li>Escalation incidents reduced by 40%</li>
+        <li>Customer satisfaction scores improved across all tier-1 accounts</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="cta__container">
+    <h2 class="cta__heading">Want Similar Results?</h2>
+    <p class="cta__text">
+      Let's discuss how I can help your team achieve measurable outcomes.
+    </p>
+    <a href="contact.html" class="btn btn--primary">Start a Conversation</a>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__container">
+      <div class="site-footer__branding">
+        <span class="logo__text">LT.Solutions</span>
+        <p class="site-footer__tagline">Hands-on Atlassian expertise, designed to scale.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Home</a></li>
+          <li class="footer-nav__item"><a href="about.html" class="footer-nav__link">About</a></li>
+          <li class="footer-nav__item"><a href="services.html" class="footer-nav__link">Services</a></li>
+          <li class="footer-nav__item"><a href="contact.html" class="footer-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contact">
+        <p>Email: <a href="mailto:andreas@lt.solutions">andreas@lt.solutions</a></p>
+        <p>Location: London, UK</p>
+      </div>
+      <p class="site-footer__copyright">&copy; 2025 Let's Talk Solutions Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
