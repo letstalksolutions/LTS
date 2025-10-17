@@ -919,33 +919,39 @@ a:focus-visible {
     text-decoration: underline;
   }
 }
-/* === Phase 4 alias shim: map .nav__* expectations to existing .site-nav* === */
-.site-header.scrolled { box-shadow: var(--shadow-md); }
-.site-header .nav__logo img { height: 40px; width: auto; }
+/* === Phase 4 alias shim (map Phase-4 selectors to current HTML) === */
 
-/* Menu containers */
-.site-nav { display: flex; align-items: center; }
-.site-nav__list { list-style: none; display: flex; gap: var(--spacing-lg); }
-@media (max-width: 768px) {
-  .site-nav__list {
-    position: fixed; top: 72px; left: 0; right: 0;
-    background: var(--color-white); flex-direction: column;
-    padding: var(--spacing-lg); box-shadow: var(--shadow-lg);
-    transform: translateX(-100%); transition: transform var(--transition-base);
-  }
-  .site-nav__list.active { transform: translateX(0); }
+/* HERO: map .page-hero → .hero */
+.hero { /* inherits page-hero frame */ }
+.hero__container { max-width: var(--container-md, 1100px); margin: 0 auto; padding: 6rem 1rem 4rem; }
+.hero__heading { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; color: var(--color-navy); }
+.hero__subheading { max-width: 60ch; margin-top: 1rem; color: var(--color-slate, #5A6A7A); }
+.hero__cta { display: flex; gap: 1rem; margin-top: 2rem; }
+
+/* Give the hero the gradient look Phase-4 expects */
+.hero {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(45,156,219,.18), rgba(45,156,219,0)),
+              linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Links */
-.site-nav__link { 
-  color: var(--color-navy); font-weight: 500;
-  padding: var(--spacing-xs) var(--spacing-sm); position: relative;
-  transition: color var(--transition-fast);
-}
-.site-nav__link:hover { color: var(--color-red); text-decoration: none; }
-.site-nav__link.nav__link--active { color: var(--color-red); }
+/* CTA: map .cta-block → .cta */
+.cta { background: var(--color-mist, #F5F7FA); padding: 4rem 1rem; }
+.cta__container { max-width: var(--container-md, 1100px); margin: 0 auto; text-align: center; }
+.cta__heading { font-size: clamp(1.5rem, 3vw, 2rem); color: var(--color-navy); margin-bottom: .75rem; }
+.cta__text { color: var(--color-slate, #5A6A7A); margin-bottom: 1.5rem; }
 
-/* Toggle */
-.mobile-menu-toggle { display: none; background: none; border: 0; padding: var(--spacing-xs); cursor: pointer; }
-@media (max-width: 768px) { .mobile-menu-toggle { display: block; } }
-.mobile-menu-toggle:focus-visible { outline: 2px solid var(--color-electric,#2D9CDB); outline-offset: 2px; border-radius: 6px; }
+/* “Project Highlights”: we’ll reuse your Service Cards for the hover polish */
+.service-card {
+  transition: transform .25s ease, box-shadow .25s ease;
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,.06));
+}
+.service-card:hover, .service-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,.10));
+}
+
+/* Reveal-on-scroll utility hook */
+.reveal, [data-reveal] { opacity: 0; transform: translateY(12px); transition: opacity .35s ease, transform .35s ease; }
+.is-revealed { opacity: 1; transform: translateY(0); }
